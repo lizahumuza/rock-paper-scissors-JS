@@ -1,0 +1,103 @@
+body{
+    background-color: paleturquoise;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3{
+    text-align: center;
+    padding: 8px;
+    font-size: 50px;
+}
+h1{
+    color: maroon;
+}
+h2{
+    color: rgb(211, 64, 224);
+    font-size: 50px;
+}
+h3{
+    color: rgb(51, 51, 134);
+    font-size: 35px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 16px;
+    width: 100%;
+    
+}
+#results{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.repeat{
+display: flex;
+justify-content: center;
+padding: 40px;
+}
+#rock{
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    color: azure;
+    width: 20%;
+    border: 2px solid black;
+
+}
+#paper{
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    color: azure;
+    width: 20%;
+    border: 2px solid black;
+
+}
+#scissors{
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    color: azure;
+    width: 20%;
+    border: 2px solid black;
+}
+#refresh{
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+}
+#cont{
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+  }
+  .button img {
+    width: 150px;
+  }
+  .button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 1px;
+  }
+  #roundWinner{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 25px;
+    padding-top: 15px;
+  }

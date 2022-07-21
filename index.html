@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="game.js"></script>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-   
+    <h1>WELCOME TO ROCK, PAPER AND SCISSORS GAME</h1>
+    <h2>Choose Your Weapon</h2>
+    <h3>Win 5 Rounds To Be The Victor! </h3>
+    <div id="container">
+        <div id="rock" class="button">
+            <img src="img/rock.png" alt="rock" />
+          </div>
+          <div id="paper" class="button">
+            <img src="img/paper.png" alt="paper" />
+          </div>
+          <div id="scissors" class="button">
+            <img src="img/scissors.png" alt="scissors" />
+          </div>
+    </div>
+    <div id="results">
+        Player scores<span id="pScore">0</span> - Computer scores<span id="cScore">0</span>
+    </div>
+    <div id="roundWinner"></div>
+    <div class="repeat">
+        <button id="refresh">Restart Game</button>
+    </div>
+    <script src="game.js"></script>
 </body>
 </html>
