@@ -24,10 +24,12 @@ buttons.forEach((button) => {
     if (playerScore === 5 || computerScore === 5) {
         checkWinner();
         buttons.forEach(button => {
-            button.removeEventListener('click', getInputs);
+            img.disabled= true;           
+            button.removeEventListener('click', getInputs);   
+            
           });
-        
-        
+          reset();
+          
     }
     });
 });
@@ -43,7 +45,7 @@ function CompareResults(playerSelection,computerSelection){
 
     const currentMatch = `${playerSelection} vs ${computerSelection}`;
     if (playerSelection === computerSelection) {
-        alert (`${currentMatch} is a Draw`);
+        //alert (`${currentMatch} is a Draw`);
         return;
     }
     if((playerSelection)==="rock"){
@@ -82,13 +84,18 @@ function reset(){
 
 function checkWinner(){
     if (playerScore >= 5 && computerScore < 5) {
-        message.textContent= 'Game Over. You Win';
-        //alert('Game Over. You Win!');
+        //message.textContent= 'Game Over. You Win';
+        alert('Game Over. You Win!');
     } else if(playerScore < 5 && computerScore >= 5) {
-        message.textContent = 'Game Over. You Lose!';
-        //alert('Game Over. You Lose!');
+        //message.textContent = 'Game Over. You Lose!';
+        alert('Game Over. You Lose!');
     } else {
-       reset();
+        buttons.forEach(button => {
+            img.disabled= true;           
+            button.removeEventListener('click', getInputs);  
+            reset();
+            
+          });
     
     }   
 }
